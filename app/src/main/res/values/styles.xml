@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/theme</item>
+    </style>
+
+    <!--Voicedialog-->
+    <style name="VoiceDialog" parent="Base.V7.Theme.AppCompat.Light.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+
+        <attr name="bord_width" format="dimension" />
+        <attr name="bord_color" format="color" />
+
+    </declare-styleable>
+
+    <!--线条-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+</resources>
